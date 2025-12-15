@@ -5,7 +5,7 @@ export function log(msg: string) {
 }
 
 export function hr() {
-  console.log(chalk.darkGray("—".repeat(80)));
+  console.log(chalk.gray("-".repeat(80)));
 }
 
 export function toolCall(name: string, args: unknown) {
