@@ -24,7 +24,6 @@ export function makeProvider(cfg: AppConfig) {
   }
 
   async function withTools({ system, user, tools }: { system: string; user: string; tools: ToolDef[] }): Promise<WithToolsResult> {
-    // input_list, как в гайде: мы добавляем output и tool outputs обратно :contentReference[oaicite:2]{index=2}
     const input: any[] = [{ role: "user", content: user }];
 
     const r = await client.responses.create({
